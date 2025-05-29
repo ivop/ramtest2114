@@ -14,7 +14,7 @@ Click the image for a larger version, or view the [pdf version](doc/ramtest2114.
 Connect the LEDs through a 390 ohm resistor to ground.
 It's important to orient the LED [the right way](https://www.switchelectronics.co.uk/blogs/news/led-polarity-basic-guide).
 The plus side goes to the Nano, the negative side to the resistor to ground.
-To ease testing multiple 2114 it's advised to use a ZIF socket.
+To ease testing multiple 2114s it's advised to use a ZIF socket.
 
 ### Flashing the firmware
 
@@ -32,6 +32,8 @@ Insert a 2114 chip into the 18 pin socket and apply power to the Nano.
 After booting it'll start testing immediately.
 During the test, the red and green LEDs will blink.
 When it's finished, either the green LED or the red LED stays on, indicating a success or a failure respectively.
+To test another chip, remove the one you just tested from the ZIF socket, place the next one, and pull down the lever.
+Press the reset button on the Nano, and it'll restart the test.
 
 ### Building the firmware from source
 
