@@ -11,6 +11,10 @@ Here's how to connect the 2114 to the Arduino Nano:
 <img src="doc/ramtest2114.png" width=400></img>
 
 Click the image for a larger version, or view the [pdf version](doc/ramtest2114.pdf).
+Connect the LEDs through a 390 ohm resistor to ground.
+It's important to orient the LED [the right way](https://www.switchelectronics.co.uk/blogs/news/led-polarity-basic-guide).
+The plus side goes to the Nano, the negative side to the resistor to ground.
+To ease testing multiple 2114 it's advised to use a ZIF socket.
 
 ### Flashing the firmware
 
@@ -20,7 +24,7 @@ Download [main.hex](https://github.com/ivop/ramtest2114/raw/refs/heads/master/ma
 avrdude -V -c arduino -b 57600 -P /dev/ttyUSB0 -p atmega328p -vv -U flash:w:main.hex
 ````
 
-Replace ```/dev/ttyUSB0``` if your systems is configured to assign a different serial device to your Nano.
+Replace ```/dev/ttyUSB0``` if your system is configured to assign a different serial device to your Nano.
 
 ### Usage
 
