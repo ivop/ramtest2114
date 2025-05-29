@@ -12,7 +12,21 @@ Here's how to connect the 2114 to the Arduino Nano:
 
 Click the image for a larger version, or view the [pdf version](doc/ramtest2114.pdf).
 
-### Software
+### Flashing the firmware
+
+Download [main.hex]() and use ```avrdude``` to flash it to the Arduino Nano.
+
+```
+avrdude -V -c arduino -b 57600 -P /dev/ttyUSB0 -p atmega328p -vv -U flash:w:main.hex
+````
+
+Replace ```/dev/ttyUSB0``` if your systems is configured to assign a different serial device to your Nano.
+
+### Building the firmware from source
+
+Install ```avr-gcc```, ```avr-libc```, and ```avrdude```.
+Clone this repository and type ```make```.
+Type ```make flash``` to automatically flash it to the connected Arduino Nano at ```/dev/ttyUSB0```.
 
 ### Errors Detected
 
