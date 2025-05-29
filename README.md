@@ -6,6 +6,12 @@ undetected.
 
 ### Hardware
 
+Here's how to connect the 2114 to the Arduino Nano:
+
+<img src="doc/ramtest2114.png" width=400></img>
+
+Click the image for a larger version, or view the [pdf version](doc/ramtest2114.pdf).
+
 ### Software
 
 ### Errors Detected
