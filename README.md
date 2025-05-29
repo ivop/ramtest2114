@@ -35,13 +35,32 @@ When it's finished, either the green LED or the red LED stays on, indicating a s
 To test another chip, remove the one you just tested from the ZIF socket, place the next one, and pull down the lever.
 Press the reset button on the Nano, and it'll restart the test.
 
+If you connect the Nano to the computer while testing, you can open a serial connection.
+During the test, it'll print some diagnostic information, and a message when it's finished or encountered an error.
+
+```
+2114 SRAM MARCH MSS TESTER
+^(w0)
+^(r0,r0,w1,w1)
+^(r1,r1,w0,w0)
+...
+...
+v(r0,r0,w1,w1)
+v(r1,r1,w0,w0)
+v(r0)
+RAM TESTED OK!
+```
+
 ### Building the firmware from source
 
 Install ```avr-gcc```, ```avr-libc```, and ```avrdude```.
 Clone this repository and type ```make```.
 Type ```make flash``` to automatically flash it to the connected Arduino Nano at ```/dev/ttyUSB0```.
 
-### Errors Detected
+### Algorithm
+
+The tester uses the MARCH MSS algorithm with.
+It tests all combinations of the up and down rules, and uses a set of three different background data value pairs to cover all errors it's able to detect.
 
 Write errors:
 
