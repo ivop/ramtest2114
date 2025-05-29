@@ -59,7 +59,7 @@ Type ```make flash``` to automatically flash it to the connected Arduino Nano at
 
 ### Algorithm
 
-The tester uses the MARCH MSS algorithm with.
+The tester uses the MARCH MSS algorithm.
 It tests all combinations of the up and down rules, and uses a set of three different background data value pairs to cover all errors it's able to detect.
 
 Write errors:
