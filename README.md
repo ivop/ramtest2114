@@ -14,13 +14,20 @@ Click the image for a larger version, or view the [pdf version](doc/ramtest2114.
 
 ### Flashing the firmware
 
-Download [main.hex]() and use ```avrdude``` to flash it to the Arduino Nano.
+Download [main.hex](https://github.com/ivop/ramtest2114/raw/refs/heads/master/main.hex) and use ```avrdude``` to flash it to the Arduino Nano.
 
 ```
 avrdude -V -c arduino -b 57600 -P /dev/ttyUSB0 -p atmega328p -vv -U flash:w:main.hex
 ````
 
 Replace ```/dev/ttyUSB0``` if your systems is configured to assign a different serial device to your Nano.
+
+### Usage
+
+Insert a 2114 chip into the 18 pin socket and apply power to the Nano.
+After booting it'll start testing immediately.
+During the test, the red and green LEDs will blink.
+When it's finished, either the green LED or the red LED stays on, indicating a success or a failure respectively.
 
 ### Building the firmware from source
 
