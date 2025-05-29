@@ -32,8 +32,9 @@ Insert a 2114 chip into the 18 pin socket and apply power to the Nano.
 After booting it'll start testing immediately.
 During the test, the red and green LEDs will blink.
 When it's finished, either the green LED or the red LED stays on, indicating a success or a failure respectively.
-To test another chip, remove the one you just tested from the ZIF socket, place the next one, and pull down the lever.
-Press the reset button on the Nano, and it'll restart the test.
+Pressing the reset button on the Nano will rerun the test.
+Be sure to disconnect the power when swapping the chip for another one to test.
+Having the Vcc pin make contact without the ground pin being connected could damage the chip.
 
 If you connect the Nano to the computer while testing, you can open a serial connection.
 During the test, it'll print some diagnostic information, and a message when it's finished or encountered an error.
