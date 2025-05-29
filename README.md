@@ -45,4 +45,5 @@ Read errors:
 * G. Harutunyan, V. A. Vardanian, and Y. Zorian, “Minimal march tests for unlinked static faults in random access memories,”
 in 23rd IEEE VLSI Test Symposium (VTS’05), 2005, pp. 53–59, doi: 10.1109/VTS.2005.56.
 [sci-hub link](https://sci-hub.se/10.1109/VTS.2005.56)
-* [Understanding Memory Fault Models](https://www.embedded.com/understanding-memory-fault-models/)  
+* [Understanding Memory Fault Models](https://www.embedded.com/understanding-memory-fault-models/)
+( [archived version](https://web.archive.org/web/20240420233156/https://www.embedded.com/understanding-memory-fault-models/) )
