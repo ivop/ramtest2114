@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "ramtest2114")(type "KiCad")(uri "${KIPRJMOD}/ramtest2114.pretty")(options "")(descr ""))
+)
