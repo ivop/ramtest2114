@@ -16,6 +16,15 @@ It's important to orient the LED [the right way](https://www.switchelectronics.c
 The plus side goes to the Nano, the negative side to the resistor to ground.
 To ease testing multiple 2114s it's advised to use a ZIF socket.
 
+### Gerbers
+
+<img src="img/ramtest2114-render.jpg" width=320></img>
+<img src="img/ramtest2114-ok.jpg" width=320></img>
+<img src="img/ramtest2114-fail.jpg" width=320></img>
+
+In the [gerbers](kicad/gerbers) directory you'll find Gerber files for a complete PCB.
+They have been tested to be working correctly.
+
 ### Flashing the firmware
 
 Download [main.hex](https://github.com/ivop/ramtest2114/raw/refs/heads/master/main.hex) and use ```avrdude``` to flash it to the Arduino Nano.
