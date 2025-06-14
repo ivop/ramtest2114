@@ -18,9 +18,9 @@ To ease testing multiple 2114s it's advised to use a ZIF socket.
 
 ### Gerbers
 
-<img src="img/ramtest2114-render.jpg" width=320></img>
-<img src="img/ramtest2114-ok.jpg" width=320></img>
-<img src="img/ramtest2114-fail.jpg" width=320></img>
+<img src="img/ramtest2114-render.jpg" width=240></img>
+<img src="img/ramtest2114-ok.jpg" width=240></img>
+<img src="img/ramtest2114-fail.jpg" width=240></img>
 
 In the [gerbers](kicad/gerbers) directory you'll find Gerber files for a complete PCB.
 They have been tested to be working correctly.
